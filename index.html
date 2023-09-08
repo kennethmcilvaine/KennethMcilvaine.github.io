@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Kenny Mc</title>
+        <link href="kenn.css" type="text/css" rel="stylesheet"/>
+        <link rel="icon" href="face.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="face.ico" type="image/x-icon">        
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans+Condensed:300|Amatic+SC" rel="stylesheet">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">         
+        </script>
+        <script>
+            $(document).ready(function(){
+                var gifsTriggered = false
+                $(window).scroll(function () {
+                    var windowSize = window.innerHeight;
+                    if($(window).scrollTop() >= ($(document).height() - windowSize*1.1)){
+                        $("#education span").css("color","#f0f0f0");
+                    }else{
+                        $("#education span").css("color","#22406e");
+                    }
+                    if(gifsTriggered == false){
+                        if($(window).scrollTop() >= windowSize*.4){
+                            setTimeout(function(){
+                                $("#app1 #gif").css("display","inline");
+                                $("#app2 #gif").css("display","inline");
+                                $("#app3 #gif").css("display","inline");
+                            }, 1000);
+                            gifsTriggered = true;
+                        }
+                    }
+                });
+                var timeoutOne = function(){
+                    $("#aboutMe span #welcome").attr("src","welcome.gif");
+                }
+                var timeoutTwo = function(){
+                    $("#aboutMe span #welcome").css("display","none");
+                    $("#aboutMe span #forever").css("display","inline");
+                }
+                window.addEventListener("orientationchange", function() {
+                    var id = window.setTimeout(function() {}, 0);
+                    while (id--) {
+                        window.clearTimeout(id); // will do nothing if no timeout with id is present
+                    }
+                    gifsTriggered = false;
+                    if (window.orientation == 90) {
+                        setTimeout(timeoutOne, 0);
+                        setTimeout(timeoutTwo, 10700);
+                    }else if(window.orientation == -90){
+                        setTimeout(timeoutOne, 0);
+                        setTimeout(timeoutTwo, 10700);
+                    }
+                });
+                setTimeout(timeoutOne, 0);
+                setTimeout(timeoutTwo, 10700);
+            });
+        </script>
+    </head>
+    <body>
+        <div id="everything">
+            <div id="backgroundBlue">
+                <div id="backgroundSlant">
+                </div>
+            </div>
+            <div id="aboutMe">
+                <img id="kenn" src="kenn4.png">
+                <img id="dev" src="dev.png">
+                <img id="UX" src="UX.png">
+
+                <span>
+                    <img id="welcome" src="">
+                    <img id="forever" src="welcomeforever.gif">
+                </span>
+                <div id="left"> </div>
+                <div id="right"> 
+                    <a href="http://www.linkedin.com/in/kennethmcilvaine/" target="_blank">
+                        <img id="linkedin" src="linkedin.png">
+                    </a>
+                    <a href="Kenneth_Mcilvaine_CV.pdf" target="_blank">
+                        <img id="cv" src="cv.png">
+                    </a>
+                    <a href="mailto:kennys.applications@gmail.com" target="_blank">
+                        <img id="email" src="email.png">
+                    </a>
+                </div>
+
+            </div>
+            <div id="app1">
+                <img id="background" src="background1.PNG">
+                <img id="app" src="vid1.png">
+                <img id="gif" src="vid1.gif">
+                <img id="frame" src="frame.PNG">
+                <div id="back">
+                    <img src="phoneback.png">
+                    <h1>Daily Good Deeds</h1>
+                    <p>Find happiness by spreading it. Make a daily habit out of kindness.<br><br>Coming soon on iOS and Android.</p>
+                </div>
+            </div>
+            <div id="app2">
+                <img id="background" src="background3.PNG">
+                <img id="app" src="vid3.png">
+                <img id="gif" src="vid3.gif">
+                <img id="frame" src="frame.PNG">
+                <div id="back">
+                    <img src="phoneback.png">
+                    <h1>Lyric Notepad</h1>
+                    <p style="margin-top: 20%">Android's #1 songwriting app with over 500,000 installs in the first year.
+                        <span id="link1">
+                            <a href="https://itunes.apple.com/us/app/lyric-notepad/id1435329761" target="_blank">
+                                <img id="appleStore" style="margin-top: 5%" src="AppleStore.png">
+                            </a>
+                            <img id="appleStoreDark" style="margin-top: 5%" src="AppleStoredark.png">
+                        </span>
+                        <span id="link2">
+                            <a href="http://play.google.com/store/apps/details?id=kmcilvai.perfectpoet" target="_blank">
+                                <img id="googlePlay" src="Google-Play-Store.png">
+                            </a>
+                            <img id="googlePlayDark" src="Google-Play-Storedark.png">
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div id="app3">
+                <img id="background" src="background2.PNG">
+                <img id="app" src="vid2.png">
+                <img id="gif" src="vid2.gif">
+                <img id="frame" src="frame.PNG">
+                <div id="back">
+                    <img src="phoneback.png">
+                    <h1>Greenfile</h1>
+                    <p>Create, share, and reuse custom forms with this user-friendly application. <br> <br>Only available for enterprise. </p>
+                </div>
+            </div>
+
+            <div id="education">
+                <span>EDUCATION</span>
+                <table>
+                    <tr>
+                        <td id="image">
+                            <img src="carnegie.png">
+                        </td>
+                        <td width="80%;">
+                            <h1>Carnegie Mellon University, H. John Heinz III College</h1>
+                            <h2>Master of Information Systems Management <br>Honors: Graduated with Higher Honors (GPA: 3.83), Recipient of MISM Scholarship, Received PSM 1 Certification</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="image">
+                            <img src="longwood.png">
+                        </td>
+                        <td width="80%;">
+                            <h1>Longwood University, College of Business and Economics</h1>
+                            <h2>Bachelor of Science in Business Administration <br>Honors: Graduated Summa Cum Laude (GPA: 3.89), Recipient of the 2015 Academic Excellence Award (highest GPA in graduating class)</h2>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="portrait">
+            <p>Rotate your device to enter.</p>
+            <img src='rotate.gif'>
+        </div>
+    </body>
+</html>

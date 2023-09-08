@@ -1,0 +1,53 @@
+
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(facebook_banner.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#arrow, #googleplay, #appleplay
+{
+    position: absolute;
+    margin-top: 8%;
+    -o-transition:all .2s ease-out, background 1s ease-in;
+    -ms-transition:all .2s ease-out, background 1s ease-in;
+    -moz-transition:all .2s ease-out, background 1s ease-in;
+    -webkit-transition:all .2s ease-out, background 1s ease-in;
+    transition:all .2s ease-out, background 1s ease-in;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+#arrow:hover,#googleplay:hover,#appleplay:hover{
+    opacity: .8;
+}
+
+#appleplay {
+    right: 15%;
+}
+
+
+#googleplay {
+    left: 17%;
+}
+
+h1 {
+   font-family: "Satisfy";
+    color: white;
+    text-shadow: 15px 15px 15px black;
+    font-size: 700%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}

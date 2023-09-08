@@ -1,0 +1,380 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(240,240,240);
+}
+html::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgb(150,150,150);
+    outline: 1px solid rgb(150,150,150);
+}
+#backgroundSlant {
+    border-radius: 0px 0px 0px 0px;
+    width: 100%;
+    height: 47vh;
+    background: url(slantbackground.png) no-repeat bottom;
+    background-size: 100%;
+    position: fixed;
+}
+
+#backgroundBlue {
+    border-radius: 0px 0px 0px 0px;
+    position: fixed;
+    height: 30vh;
+    width: 100%;
+    background-color: #22406e;
+}
+
+
+#dev {
+    opacity: 0.0;
+    width: 14%;
+    position: absolute;
+    left: 7%;
+    top: 50%;
+
+}
+
+
+#UX {
+    opacity: 0.0;
+    width: 14%;
+    position: absolute;
+    right: 7%;
+    top: 48%;
+
+}
+
+
+#aboutMe {
+    background-color: white;
+    background: url(aboutmewallpaper.png);
+    background-size: cover;
+    width: 70%;
+    background-position: center;
+    left: 15%;
+    height: 50vh;
+    top: 20%;
+    position: absolute;
+    box-shadow: 0.5px 0.5px 5px #777;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+#welcome, #forever{
+    position: relative;
+    padding-top: 2.5%;
+    height: 35%;
+}
+
+#forever{
+    display: none;
+}
+
+#left {
+    position: absolute;
+    width: 50%;
+    left: 0%;
+    height: 100%;
+    top: 0%;
+}
+
+#right{
+    position: absolute;
+    width: 50%;
+    right: 0%;
+    height: 100%;
+    top: 0%;
+}
+#kenn{
+    height:40%;
+}
+
+#linkedin {
+    height: 12%;
+    position: absolute;
+    right: 24%;
+    top: 11%;
+}
+
+#cv {
+    height: 12%;
+    position: absolute;
+    right: 8%;
+    top: 11%;
+}
+
+#email {
+    height: 12%;
+    position: absolute;
+    right: 40%;
+    top: 11%;
+}
+
+#linkedin, #email, #cv{
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 3px 3px 5px #555;
+}
+
+#linkedin:hover, #email:hover, #cv:hover{
+    height: 14%;
+}
+
+#app1, #app2, #app3{
+    width: 21%;
+    height: 80vh;
+    top: 80vh;
+    position: absolute;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+
+#frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#back{
+        visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+#app1:hover #back, #app2:hover #back, #app3:hover #back{
+    visibility: visible;
+}
+
+#back h1{
+    font-family: 'Amatic SC', cursive;
+    color:  rgb(240,240,240);
+    width: 100%;
+    position: absolute;
+    font-size: 2.8vw;
+    top: 25%;
+    transform: translate(0%,-50%);
+}
+
+#back p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color:  rgb(240,240,240);
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    font-size: 1.275vw;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+
+#back p img {
+    padding-top: 5%;
+}
+
+#appleStore, #googlePlay{
+    display: none;
+}
+
+#link1:hover #appleStore, #link2:hover #googlePlay{
+    display: inline;
+}
+
+#link1:hover #appleStoreDark, #link2:hover #googlePlayDark{
+    display: none;
+}
+
+
+
+#back img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+}
+
+#app, #gif{
+    border-radius: 5%;
+    position: absolute;
+    left: 7%;
+    height: 93.5%;
+    width: 86%;
+    object-fit: contain;
+    transform: translate(0%, 3.25%);
+
+}
+
+#gif{
+    display: none;
+}
+
+#app1{
+    left:  15%;
+}
+
+#app2{
+    left:39.5%;
+}
+
+#app3{
+    right: 15%;
+}
+
+#logo {
+    padding-top: 1%;
+    height: 12%;
+    width: 60%;
+    object-fit: contain;
+}
+
+
+#website1 object, #website2 object{
+    height: 100%;
+    width: 100%;
+}
+
+#education {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: rgb(240,240,240);
+    top: 168vh;
+    height: 72vh;
+}
+
+#education span{
+    font-size: 300%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #22406e;
+}
+
+#education table{
+    text-align: left;
+    /*    position: relative;*/
+    color: #22406e;
+    height: 50vh;
+
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 4%;
+}
+
+div{
+    border-radius: 10px 10px 10px 10px;
+}
+
+#education table img{
+    height: 18vh;
+}
+
+#education h1{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1%;
+    font-size: 2.1vw;
+    font-family: 'Josefin Slab', serif;
+}
+
+#education h2{
+    padding: 0;
+    margin: 0;
+    font-size: 1.4vw;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#nav {
+    text-align: center;
+    position: fixed;
+    width: 4%;
+    height: 10vh;
+    top: 45%;
+    left: 7.5%;
+    margin-top: -5vh;
+    margin-left: -2%;
+}
+
+#nav img {
+    width: 20%;
+
+}
+
+#nav #first{
+    width: 25%;
+}
+
+#nav td {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+
+#portrait{
+    text-align: center;
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 350%;
+    color: black;
+    opacity: .65;
+}
+
+#portrait p{
+    padding: 0;
+    margin: 0;
+}
+
+#portrait img {
+    opacity: .85;
+    width: 100%;
+}
+
+@media only screen and (orientation:portrait){
+
+    html, body {
+        overflow: hidden;
+    }
+    #everything{
+        visibility: hidden;
+    }
+    #portrait {
+        visibility: visible;
+    } 
+
+}
+
+@media only screen and (orientation:landscape){
+    html, body {
+        overflow: auto;
+    }
+    #everything {
+        visibility: visible;
+    }
+    #portrait {
+        visibility: hidden;
+    }
+}
